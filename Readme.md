@@ -41,4 +41,8 @@ Added unit test cases to test productRating.service file
 1. `supertest`: SuperAgent driven library for testing HTTP servers
 Tested all APIs
 
+## Security
+
+1. `Helmet` configure helmet to secure the app by setting various HTTP headers 
+Handled and secure the app from well know web vulnerabilities 
 
