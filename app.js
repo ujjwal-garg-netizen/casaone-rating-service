@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
+const helmet = require('helmet')
 
 const ratingRoutes = require('./src/routes/productRating.route');
 
@@ -32,7 +33,7 @@ const swaggerDocOptions = {
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerDocOptions);
-
+app.use(helmet())
 app.get('/health', (req, res) => res.status(200).send('healthy'))
 app.use('/', ratingRoutes);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
