@@ -46,3 +46,10 @@ Tested all APIs
 1. `Helmet` configure helmet to secure the app by setting various HTTP headers 
 Handled and secure the app from well know web vulnerabilities 
 
+## Load Testing
+
+Implement load testing to ensure your service can handle a high amount of traffic
+
+1. `artillery`: Load testing library
+2. `forever`: To spin up a daemon and kill it after the load test has completed
+
