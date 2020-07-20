@@ -19,3 +19,7 @@ Configured the following tools and connected them to `npm run test`
 3. `mocha` - for testing
 3. `pre-push` - for git pre push hook running tests
 4. `winston` - for logging
+
+## API Developement
+
+Developed API for product rating, available at http://localhost:3000/rating/{productId} with optional "page" and "pageSize" as query parameters
