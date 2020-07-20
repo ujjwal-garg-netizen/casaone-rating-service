@@ -1,5 +1,5 @@
-
 const express = require('express');
+
 const router = express.Router();
 
 const productRatingController = require('../controllers/productRating');
@@ -23,7 +23,6 @@ const productRatingController = require('../controllers/productRating');
  *          message:
  *            type: string
  */
-
 
 /**
  * @swagger
@@ -56,7 +55,7 @@ const productRatingController = require('../controllers/productRating');
  *                schema:
  *                  type: object
  *                  properties:
- *                    aggrRating: 
+ *                    aggrRating:
  *                      type: object
  *                      properties:
  *                        avgRating:
@@ -64,11 +63,11 @@ const productRatingController = require('../controllers/productRating');
  *                        numberRating:
  *                          type: number
  *                    individualRatings:
- *                      type: array   
- *                      items: 
+ *                      type: array
+ *                      items:
  *                        type: object
  *                        properties:
- *                          name: 
+ *                          name:
  *                            type: string
  *                          rating:
  *                            type: number
@@ -97,7 +96,6 @@ const productRatingController = require('../controllers/productRating');
  *                  $ref: '#/components/responses/InternalServerError'
  */
 
-
 router.get('/rating/:productId', productRatingController);
 
-module.exports = router
+module.exports = router;
