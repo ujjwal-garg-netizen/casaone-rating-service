@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "npm run linter",
+    "test": "npm run linter && npm run coverage",
+    "coverage": "nyc mocha tests",
     "linter": "eslint src/**/*.js --fix"
   },
   "pre-push": [
@@ -16,12 +17,15 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
     "pre-push": "^0.1.1"
   }
 }
