@@ -7,7 +7,6 @@ The goal is to have API to fetch ratings for the product. This should also retur
 1. Clone `https://github.com/ujjwal-garg-netizen/casaone-rating-service.git` 
 2. Ensure `node (>8.6 and <= 10)` and `npm` are installed
 3. Run `npm install`
-4. Run `npm test`
 5. Run `npm start`
 6. Hit the server to test health `curl localhost:3000/health` and expect a `200` response 
 
@@ -23,3 +22,9 @@ Configured the following tools and connected them to `npm run test`
 ## API Developement
 
 Developed API for product rating, available at http://localhost:3000/rating/{productId} with optional "page" and "pageSize" as query parameters
+
+## API Documentation
+
+1. `swagger-jsdoc` - to document the code and keep a live and reusable OpenAPI ( Swagger) specification. 
+2. `swagger-ui-express` - to serve auto-generated swagger-ui generated API docs from express, based on swagger-jsdoc document
+Beautiful and interactive documentation would be available at http://localhost:3000/api-docs/#/
