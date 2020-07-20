@@ -11,3 +11,11 @@ The goal is to have API to fetch ratings for the product. This should also retur
 5. Run `npm start`
 6. Hit the server to test health `curl localhost:3000/health` and expect a `200` response 
 
+## Tooling
+
+Configured the following tools and connected them to `npm run test`
+1. `eslint` - for linting using airbnb-base
+2. `nyc` - for code coverage
+3. `mocha` - for testing
+3. `pre-push` - for git pre push hook running tests
+4. `winston` - for logging
